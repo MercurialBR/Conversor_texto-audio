@@ -8,7 +8,7 @@
 
 h1 {
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
     color: #FFF;
 }
 
@@ -23,7 +23,17 @@ body {
 }
 
 header {
-    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+header img {
+    width: 25%;
+    height: auto;
+    margin-bottom: 15px;
 }
 
 main {
@@ -69,4 +79,29 @@ select, button {
 select:disabled, 
 button:disabled {
     opacity: .1;
+}
+
+@media screen and (max-width: 1279px) {
+	body {
+        background-size: auto;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1919px) {
+	main {
+        width: 30%;
+        height: auto;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+	main {
+        width: 50%;
+        height: auto;
+    }
+}
+@media (min-width: 350px) and (max-width: 767px) {
+	main {
+        width: 90%;
+        height: auto;
+    }
 }
